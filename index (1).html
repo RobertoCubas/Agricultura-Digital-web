@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto Cubas – Agricultura Digital y SIG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      background-color: #f5f7f9;
+      color: #333;
+    }
+
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Soja_cultivo_paraguay.jpg') no-repeat center center/cover;
+      height: 320px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 5px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .services, .contact {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .services h2, .contact h2 {
+      color: #2e8b57;
+      margin-bottom: 20px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background: #f0f8f4;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .service-item h3 {
+      margin: 10px 0;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .social-links a {
+      margin-right: 15px;
+      color: #2e8b57;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 14px 18px;
+      font-size: 26px;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 28px; }
+      header p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Roberto Cubas</h1>
+  <p>Agricultura Digital y SIG en Paraguay</p>
+</header>
+
+<div class="container">
+  <section class="services">
+    <h2>Servicios</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/EbeeX%28Parrot%29drone.png" alt="eBee X Drone">
+        <h3>Monitoreo con eBee X</h3>
+        <p>Captura y análisis de imágenes aéreas con precisión.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://wingtra.com/wp-content/uploads/2022/06/WingtraOne-Gen-II-product-1200x1200.png" alt="Wingtra Drone">
+        <h3>Vuelos con Wingtra</h3>
+        <p>Cobertura eficiente de grandes áreas agrícolas.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Esri_logo.svg" alt="Esri">
+        <h3>Mapas con ESRI</h3>
+        <p>Soluciones geoespaciales con tecnología de vanguardia.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://pix4d.com/sites/default/files/styles/scale_max_752x/public/2023-01/pix4d_logo_0.png" alt="Pix4D">
+        <h3>Procesamiento con Pix4D</h3>
+        <p>Generación de ortomosaicos y modelos digitales de terreno.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://agrocad.com.ar/wp-content/uploads/2022/02/logo-agrocad-h200.png" alt="AgroCAD">
+        <h3>Diseño con AgroCAD</h3>
+        <p>Planificación agrícola asistida por CAD especializado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>Correo: <strong>cubasbenitezroberto@gmail.com</strong></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/19iop1daZu/" target="_blank">🌐 Facebook</a>
+      <a href="https://www.linkedin.com/in/roberto-cubas-909395163" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Roberto Cubas | Agricultura Digital & SIG</p>
+</footer>
+
+<a href="https://wa.me/595982910884" class="whatsapp-btn" target="_blank">💬</a>
+
+</body>
+</html>
